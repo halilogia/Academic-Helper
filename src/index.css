@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Times New Roman", "Times", "serif";
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap');
+
+@media print {
+    body { background: white; }
+    @page { margin: 0; size: auto; }
+    .print-hidden { display: none !important; }
+}
+
+#print-area {
+    /* Times New Roman explicitly for the A4 page */
+    font-family: 'Times New Roman', Times, serif;
+}

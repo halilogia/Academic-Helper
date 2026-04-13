@@ -1,57 +1,42 @@
-Ödev Kapağı Oluşturucu
+# Academic Helper: Assignment Cover & Bibliography Generator
 
-Lisansüstü Eğitim Enstitüsü ve Fakülte standartlarına (16-14-12 punto hiyerarşisi, Times New Roman fontu vb.) tam uyumlu ödev kapaklarını saniyeler içinde oluşturmanızı sağlayan pratik bir web aracıdır.
+Academic Helper is a practical web tool that allows you to create assignment cover pages in seconds, fully compliant with Graduate School and Faculty standards (16-14-12 point hierarchy, Times New Roman font, etc.).
 
-🌟 Özellikler
+🌟 Features
 
-Canlı Önizleme: Sol panelden (veya mobilde üst panelden) bilgileri girdiğiniz anda, sağ tarafta kapağın A4 kağıdındaki görünümünü anlık olarak görebilirsiniz.
+- **Live Preview:** As soon as you enter information from the left panel (or top panel on mobile), you can instantly see the appearance of the cover on A4 paper on the right.
+- **Download as PDF:** You can download the cover you prepared in PDF format with a single button, without any shifts or distortion.
+- **Academic Format:** Titles are set to 16 points, Assignment Subject to 14 points, Student/Advisor information to 12 points, according to universal academic writing guides.
+- **Font Guarantee:** The system looks for "Times New Roman" font on your computer. If it cannot find it or you are on a mobile device, it loads the "Tinos" font (Times New Roman alternative) via Google Fonts to ensure the output always looks correct.
+- **Logo Management:** It opens with a default university logo. If you want, you can upload your own logo from your computer or remove the logo.
+- **No Installation:** It does not require .exe or complex installation files. It is a single .html file.
 
-PDF Olarak İndirme: Tek bir tuşla hazırladığınız kapağı, kayma veya bozulma olmadan PDF formatında indirebilirsiniz.
+🚀 How to Use?
 
-Akademik Format: Başlıklar 16 punto, Ödev Konusu 14 punto, Öğrenci/Danışman bilgileri 12 punto olacak şekilde BŞEÜ yazım kılavuzuna göre ayarlanmıştır.
+1. **Open the File:** Double-click the `index.html` file to open it in your browser (Google Chrome, Edge, Firefox, etc.).
+2. **Enter Information:**
+    - Check the University/Institute names.
+    - Enter the Assignment Subject.
+    - Fill in the course name, your own name, number, and advisor information.
+3. **Check:** Check how the cover looks from the preview area on the right.
+4. **Download:** Click the green "Download PDF" button at the top. Your file will be downloaded to your computer as a PDF.
 
-Yazı Tipi Garantisi: Sistem, bilgisayarınızda "Times New Roman" fontunu arar. Eğer bulamazsa veya mobil cihazdaysanız, Google Fonts üzerinden "Tinos" fontunu (Times New Roman alternatifi) yükleyerek çıktının her zaman doğru görünmesini sağlar.
+⚠️ Important Note (Internet Connection)
 
-Logo Yönetimi: Varsayılan üniversite logosu ile açılır. İsterseniz bilgisayarınızdan kendi logonuzu yükleyebilir veya logoyu kaldırabilirsiniz.
+This tool pulls the necessary libraries (React, Tailwind, PDF engine) via CDN (Content Delivery Network) to keep the file size small and not require installation.
 
-Kurulumsuz: .exe veya karmaşık kurulum dosyaları gerektirmez. Tek bir .html dosyasıdır.
+Therefore, your internet connection must be active while using the program. If you open it without internet, the design may look broken or the PDF generation feature may not work.
 
-🚀 Nasıl Kullanılır?
+🛠️ Technical Details
 
-Dosyayı Açın: odev-kapagi.html dosyasına çift tıklayarak tarayıcınızda (Google Chrome, Edge, Firefox vb.) açın.
+This project is designed to run directly on the browser without the need for any server (Serverless).
 
-Bilgileri Girin:
+- **Base Structure:** HTML5
+- **Interface Logic:** React.js (Compiled with Babel via CDN)
+- **Style/Design:** Tailwind CSS (CDN)
+- **PDF Engine:** html2pdf.js
+- **Fonts:** Google Fonts (Tinos)
 
-Üniversite/Enstitü adlarını kontrol edin.
+📝 License
 
-Ödev Konusunu girin.
-
-Ders adını, kendi adınızı, numaranızı ve danışman bilgilerini doldurun.
-
-Kontrol Edin: Sağ taraftaki önizleme alanından kapağın nasıl göründüğünü kontrol edin.
-
-İndirin: Üstteki yeşil "PDF İndir" butonuna basın. Dosyanız BSEU_Odev_Kapagi.pdf olarak bilgisayarınıza inecektir.
-
-⚠️ Önemli Not (İnternet Bağlantısı)
-
-Bu araç, dosya boyutunu küçük tutmak ve kurulum gerektirmemek için gerekli kütüphaneleri (React, Tailwind, PDF motoru) CDN (İçerik Dağıtım Ağı) üzerinden çeker.
-
-Bu nedenle, programı kullanırken internet bağlantınızın aktif olması gerekmektedir. İnternet olmadan açarsanız tasarım bozuk görünebilir veya PDF oluşturma özelliği çalışmayabilir.
-
-🛠️ Teknik Detaylar
-
-Bu proje, herhangi bir sunucuya ihtiyaç duymadan (Serverless) doğrudan tarayıcı üzerinde çalışacak şekilde tasarlanmıştır.
-
-Temel Yapı: HTML5
-
-Arayüz Mantığı: React.js (CDN üzerinden Babel ile derlenir)
-
-Stil/Tasarım: Tailwind CSS (CDN)
-
-PDF Motoru: html2pdf.js
-
-Fontlar: Google Fonts (Tinos)
-
-📝 Lisans
-
-Bu proje açık kaynaklıdır. öğrenciler tarafından ödev teslimlerinde ücretsiz olarak kullanılabilir, paylaşılabilir ve geliştirilebilir.
+This project is open-source. It can be used, shared, and developed for free by students for assignment submissions.
