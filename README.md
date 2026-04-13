@@ -1,42 +1,41 @@
 # Academic Helper: Assignment Cover & Bibliography Generator
 
-Academic Helper is a practical web tool that allows you to create assignment cover pages in seconds, fully compliant with Graduate School and Faculty standards (16-14-12 point hierarchy, Times New Roman font, etc.).
+Academic Helper, akademik standartlara (16-14-12 punto hiyerarşisi, Times New Roman fontu vb.) tam uyumlu ödev kapakları ve APA 7 formatında kaynakçalar oluşturmanıza olanak tanıyan pratik bir web araç setidir.
 
-🌟 Features
+Arşivdeki eski monolitik yapısından modern **Vite + React 19 + TypeScript** mimarisine taşınmış, çok dilli destek ve gelişmiş özelliklerle güncellenmiştir.
 
-- **Live Preview:** As soon as you enter information from the left panel (or top panel on mobile), you can instantly see the appearance of the cover on A4 paper on the right.
-- **Download as PDF:** You can download the cover you prepared in PDF format with a single button, without any shifts or distortion.
-- **Academic Format:** Titles are set to 16 points, Assignment Subject to 14 points, Student/Advisor information to 12 points, according to universal academic writing guides.
-- **Font Guarantee:** The system looks for "Times New Roman" font on your computer. If it cannot find it or you are on a mobile device, it loads the "Tinos" font (Times New Roman alternative) via Google Fonts to ensure the output always looks correct.
-- **Logo Management:** It opens with a default university logo. If you want, you can upload your own logo from your computer or remove the logo.
-- **No Installation:** It does not require .exe or complex installation files. It is a single .html file.
+🌟 Özellikler
 
-🚀 How to Use?
+- **Canlı Önizleme:** Sol panelden (mobilde üst panel) bilgileri girdiğiniz anda, sağ tarafta A4 kağıdı üzerindeki görünümü anlık olarak görebilirsiniz.
+- **PDF Olarak İndir:** Hazırladığınız kapağı tek butonla, kayma veya bozulma olmadan PDF formatında indirebilirsiniz.
+- **Akademik Format:** Başlıklar 16 punto, Ödev Konusu 14 punto, Öğrenci/Danışman bilgileri 12 punto olacak şekilde evrensel akademik yazım kılavuzlarına göre ayarlanmıştır.
+- **Hızlı Kaynakça Oluşturucu (APA 7):** DOI veya ISBN numarası girerek makale ve kitap kaynakçalarınızı saniyeler içinde APA 7 formatında oluşturabilirsiniz.
+- **Şablon Yönetimi:** Sık kullandığınız kapak bilgilerini şablon olarak kaydedebilir ve daha sonra tek tıkla tekrar yükleyebilirsiniz.
+- **Çok Dilli Destek:** Arayüz ve varsayılan içerikler için Türkçe ve İngilizce dil desteği mevcuttur.
+- **Font Garantisi:** Sistem öncelikli olarak bilgisayarınızdaki "Times New Roman" fontunu kullanır. Bulunamazsa Google Fonts üzerinden alternatifleri yükleyerek çıktının her zaman doğru görünmesini sağlar.
+- **Logo Yönetimi:** Varsayılan üniversite logosu ile açılır. İsterseniz kendi logonuzu yükleyebilir veya logoyu kaldırabilirsiniz.
 
-1. **Open the File:** Double-click the `index.html` file to open it in your browser (Google Chrome, Edge, Firefox, etc.).
-2. **Enter Information:**
-    - Check the University/Institute names.
-    - Enter the Assignment Subject.
-    - Fill in the course name, your own name, number, and advisor information.
-3. **Check:** Check how the cover looks from the preview area on the right.
-4. **Download:** Click the green "Download PDF" button at the top. Your file will be downloaded to your computer as a PDF.
+🚀 Nasıl Kullanılır?
 
-⚠️ Important Note (Internet Connection)
+### Geliştirme Ortamı
+1. Projeyi klonlayın.
+2. `npm install` ile bağımlılıkları yükleyin.
+3. `npm run dev` komutu ile yerel sunucuyu başlatın.
 
-This tool pulls the necessary libraries (React, Tailwind, PDF engine) via CDN (Content Delivery Network) to keep the file size small and not require installation.
+### Yayınlama
+1. `npm run build` komutu ile projenizi derleyin.
+2. `dist` klasörü içindeki dosyaları herhangi bir web sunucusuna (Netlify, Vercel, GitHub Pages vb.) yükleyin.
 
-Therefore, your internet connection must be active while using the program. If you open it without internet, the design may look broken or the PDF generation feature may not work.
+🛠️ Teknik Detaylar
 
-🛠️ Technical Details
+Bu proje, modern web teknolojileri kullanılarak performanslı ve modüler bir yapıda geliştirilmiştir.
 
-This project is designed to run directly on the browser without the need for any server (Serverless).
+- **Framework:** React 19 & TypeScript
+- **Derleyici:** Vite
+- **Stil/Tasarım:** Tailwind CSS v4
+- **PDF Motoru:** html2pdf.js
+- **Yazı Tipleri:** Google Fonts (Times New Roman hiyerarşisi)
 
-- **Base Structure:** HTML5
-- **Interface Logic:** React.js (Compiled with Babel via CDN)
-- **Style/Design:** Tailwind CSS (CDN)
-- **PDF Engine:** html2pdf.js
-- **Fonts:** Google Fonts (Tinos)
+📝 Lisans
 
-📝 License
-
-This project is open-source. It can be used, shared, and developed for free by students for assignment submissions.
+Bu proje açık kaynaklıdır. Öğrenciler tarafından ödev teslimleri için ücretsiz olarak kullanılabilir, paylaşılabilir ve geliştirilebilir.
